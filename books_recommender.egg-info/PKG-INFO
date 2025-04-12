@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: books-recommender
+Version: 0.0.1
+Summary: A small local packages for ML based books recommendations
+Home-page: https://github.com/patilsaklesh/End_to_End_Book_Recommender_System.git
+Author: saklesh
+Author-email: sp.sakleshpatil@gmail.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# End_to_End_Book_Recommender_System

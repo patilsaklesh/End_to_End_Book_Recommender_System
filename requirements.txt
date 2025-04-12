@@ -1,4 +1,6 @@
-scikit-learn
+scikit-learn 
 pandas 
 numpy
-ipykernel
+PyYAML
+streamlit
+-e .
