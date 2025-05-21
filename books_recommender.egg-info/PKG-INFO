@@ -1,5 +1,5 @@
 Metadata-Version: 2.1
-Name: books-recommender
+Name: books_recommender
 Version: 0.0.1
 Summary: A small local packages for ML based books recommendations
 Home-page: https://github.com/patilsaklesh/End_to_End_Book_Recommender_System.git
