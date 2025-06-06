@@ -1,61 +1,79 @@
-End-to-End-Book-Recommender-System
-Workflow
-config.yaml
-entity
-config/configuration.py
-components
-pipeline
-main.py
-app.py
-How to run?
-STEPS:
-Clone the repository
+# End_to_End_Book_Recommender_System  
+**Collaborative Filtering based Book Recommendation**
 
-https://github.com/patilsaklesh/End_to_End_Book_Recommender_System.git
-STEP 01- Create a conda environment after opening the repository
-conda create -n books python=3.7.10 -y
-conda activate books
-STEP 02- install the requirements
-pip install -r requirements.txt
-Now run,
+📌 **Project Overview**  
+This project builds a complete Book Recommender System using Collaborative Filtering techniques. It predicts user preferences by analyzing user-book interaction data to recommend books similar users have liked.
 
-streamlit run app.py
-Streamlit app Docker Image Deployment
-1. Login with your AWS console and launch an EC2 instance
-2. Run the following commands
-Note: Do the port mapping to this port:- 8501
-
-sudo apt-get update -y
-
-sudo apt-get upgrade
-
-#Install Docker
- to check : docker ps
-
-curl -fsSL https://get.docker.com -o get-docker.sh
-
-sudo sh get-docker.sh
-
-sudo usermod -aG docker ubuntu
-
-newgrp docker
-
-to check : docker --version
-to check container : docker ps
-
-git clone "your-project"
-docker build -t patilsaklesh/bookapp:latest . 
-docker images -a  
-docker run -d -p 8501:8501 patilsaklesh/bookapp 
-docker ps  
-docker stop container_id
-docker rm $(docker ps -a -q)
-docker login 
-docker push patilsaklesh/bookapp:latest 
-docker rmi patilsaklesh/bookapp:latest
-docker pull patilsaklesh/bookapp
+🚀 **Features**  
+- Modular pipeline with stages: data ingestion, validation, transformation, and model training  
+- Collaborative Filtering algorithms (User-Based and Item-Based) for recommendations  
+- Config-driven design for easy tuning  
+- Robust logging and exception handling  
+- Docker support for containerized deployment  
+- Deployment on AWS EC2 for scalable hosting  
+- Interactive Streamlit web application for easy user interaction and recommendations  
 
 
+## 📂 Project Structure  
+
+```
+End_to_End_Book_Recommender_System/
+│
+├── books_recommender/                                                                                                                   
+│   ├── components/                # Pipeline stages                                                                                 
+│   │   ├── stage_00_data_ingestion.py
+│   │   ├── stage_01_data_validation.py
+│   │   ├── stage_02_data_transformation.py
+│   │   └── stage_03_model_trainer.py
+│   │
+│   ├── config/                    # Configuration scripts
+│   │   └── configuration.py
+│   │
+│   ├── constant/                  # Constant values
+│   │
+│   ├── entity/                    # Data schemas
+│   │   └── config_entity.py
+│   │
+│   ├── exception/                 # Custom exception handling
+│   │   └── exception_handler.py
+│   │
+│   ├── logger/                    # Logging utility
+│   │   └── log.py
+│   │
+│   ├── pipeline/                  # End-to-end training pipeline
+│   │   └── training_pipeline.py
+│   │
+│   ├── utils/                     # Helper functions
+│   │   └── util.py
+│
+├── config.yaml                    # Configuration file
+├── app.py                         # Streamlit app
+├── Dockerfile                     # Docker setup
+├── .dockerignore                  # Docker ignore rules
+├── setup.py                       # Project setup script
+```
+
+📊 **Collaborative Filtering Approach**  
+- Uses user-item interaction data to find similarities between users or items  
+- Provides personalized book recommendations based on past behaviors  
+- Implements both user-based and item-based filtering for robust recommendations  
+
+
+## 💡 Future Improvements
+
+- Add deep learning based recommenders
+- Enhance feature engineering and data enrichment
+
+
+🚀 Contribute & Star the Repo if You Like It! 🌟
+
+
+## App Preview
+
+Below is a preview of the Streamlit application:
+
+![App Screenshot](screenshots/basic.png)
+![App Screenshot](screenshots/main1.png)
 
 
 
