@@ -16,29 +16,30 @@ This project builds a complete Book Recommender System using Collaborative Filte
 
 📂 **Project Structure**
 books_recommender/
-├── components/ # Pipeline stages (data ingestion, validation, transformation, training)
-│ ├── stage_00_data_ingestion.py
-│ ├── stage_01_data_validation.py
-│ ├── stage_02_data_transformation.py
-│ └── stage_03_model_trainer.py
-├── config/ # Configuration scripts and files
-│ └── configuration.py
-├── constant/ # Project constants
-├── entity/ # Data schema and entities
-│ └── config_entity.py
-├── exception/ # Exception handling modules
-│ └── exception_handler.py
-├── logger/ # Logging utilities
-│ └── log.py
-├── pipeline/ # Orchestrates the training pipeline
-│ └── training_pipeline.py
-├── utils/ # Utility helper functions
-│ └── util.py
-├── config.yaml # Configuration YAML file
-├── app.py # Application entrypoint (API or interface)
-├── Dockerfile # Docker container setup
-├── .dockerignore # Docker ignore rules
-├── setup.py # Packaging script
+├── components/                  # Pipeline stages (data ingestion, validation, transformation, training)
+│   ├── stage_00_data_ingestion.py
+│   ├── stage_01_data_validation.py
+│   ├── stage_02_data_transformation.py
+│   └── stage_03_model_trainer.py
+├── config/                      # Configuration scripts and files
+│   └── configuration.py
+├── constant/                    # Project constants
+├── entity/                      # Data schema and entities
+│   └── config_entity.py
+├── exception/                   # Exception handling modules
+│   └── exception_handler.py
+├── logger/                      # Logging utilities
+│   └── log.py
+├── pipeline/                    # Orchestrates the training pipeline
+│   └── training_pipeline.py
+├── utils/                       # Utility helper functions
+│   └── util.py
+├── config.yaml                  # Configuration YAML file
+├── app.py                      # Application entrypoint (API or interface)
+├── Dockerfile                   # Docker container setup
+├── .dockerignore                # Docker ignore rules
+├── setup.py                    # Packaging script
+
 
 📊 **Collaborative Filtering Approach**  
 - Uses user-item interaction data to find similarities between users or items  
