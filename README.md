@@ -14,31 +14,43 @@ This project builds a complete Book Recommender System using Collaborative Filte
 - Interactive Streamlit web application for easy user interaction and recommendations  
 
 
-📂 **Project Structure**
-books_recommender/
-├── components/                  # Pipeline stages (data ingestion, validation, transformation, training)
-│   ├── stage_00_data_ingestion.py
-│   ├── stage_01_data_validation.py
-│   ├── stage_02_data_transformation.py
-│   └── stage_03_model_trainer.py
-├── config/                      # Configuration scripts and files
-│   └── configuration.py
-├── constant/                    # Project constants
-├── entity/                      # Data schema and entities
-│   └── config_entity.py
-├── exception/                   # Exception handling modules
-│   └── exception_handler.py
-├── logger/                      # Logging utilities
-│   └── log.py
-├── pipeline/                    # Orchestrates the training pipeline
-│   └── training_pipeline.py
-├── utils/                       # Utility helper functions
-│   └── util.py
-├── config.yaml                  # Configuration YAML file
-├── app.py                      # Application entrypoint (API or interface)
-├── Dockerfile                   # Docker container setup
-├── .dockerignore                # Docker ignore rules
-├── setup.py                    # Packaging script
+## 📂 Project Structure  
+
+
+End_to_End_Book_Recommender_System/
+│
+├── books_recommender/
+│   ├── components/                # Pipeline stages
+│   │   ├── stage_00_data_ingestion.py
+│   │   ├── stage_01_data_validation.py
+│   │   ├── stage_02_data_transformation.py
+│   │   └── stage_03_model_trainer.py
+│   │
+│   ├── config/                    # Configuration scripts
+│   │   └── configuration.py
+│   │
+│   ├── constant/                  # Constant values
+│   │
+│   ├── entity/                    # Data schemas
+│   │   └── config_entity.py
+│   │
+│   ├── exception/                 # Custom exception handling
+│   │   └── exception_handler.py
+│   │
+│   ├── logger/                    # Logging utility
+│   │   └── log.py
+│   │
+│   ├── pipeline/                  # End-to-end training pipeline
+│   │   └── training_pipeline.py
+│   │
+│   ├── utils/                     # Helper functions
+│   │   └── util.py
+│
+├── config.yaml                    # Configuration file
+├── app.py                         # Streamlit app
+├── Dockerfile                     # Docker setup
+├── .dockerignore                  # Docker ignore rules
+├── setup.py                       # Project setup script
 
 
 📊 **Collaborative Filtering Approach**  
