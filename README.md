@@ -44,16 +44,16 @@ to check : docker --version
 to check container : docker ps
 
 git clone "your-project"
-docker build -t patilsaklesh/stapp:latest . 
+docker build -t patilsaklesh/bookapp:latest . 
 docker images -a  
-docker run -d -p 8501:8501 patilsaklesh/stapp 
+docker run -d -p 8501:8501 patilsaklesh/bookapp 
 docker ps  
 docker stop container_id
 docker rm $(docker ps -a -q)
 docker login 
-docker push patilsaklesh/stapp:latest 
-docker rmi patilsaklesh/stapp:latest
-docker pull patilsaklesh/stapp
+docker push patilsaklesh/bookapp:latest 
+docker rmi patilsaklesh/bookapp:latest
+docker pull patilsaklesh/bookapp
 
 
 

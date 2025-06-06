@@ -9,7 +9,7 @@ from books_recommender.config.configuration import AppConfiguration
 
 class DataIngestion:
 
-    def __init__(self, app_config = AppConfiguration()):
+    def __init__(self, app_config : AppConfiguration = AppConfiguration()):
         """
         DataIngestion Intialization
         data_ingestion_config: DataIngestionConfig 

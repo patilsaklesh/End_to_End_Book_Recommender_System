@@ -172,3 +172,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+*.egg-info/
+artifacts/
+logs/
+notebook/artifacts/
+notebook/*.csv/
+notebook/**/*.csv
+templates/
