@@ -16,11 +16,11 @@ This project builds a complete Book Recommender System using Collaborative Filte
 
 ## 📂 Project Structure  
 
-
+```
 End_to_End_Book_Recommender_System/
 │
-├── books_recommender/
-│   ├── components/                # Pipeline stages
+├── books_recommender/                                                                                                                   
+│   ├── components/                # Pipeline stages                                                                                 
 │   │   ├── stage_00_data_ingestion.py
 │   │   ├── stage_01_data_validation.py
 │   │   ├── stage_02_data_transformation.py
@@ -51,7 +51,7 @@ End_to_End_Book_Recommender_System/
 ├── Dockerfile                     # Docker setup
 ├── .dockerignore                  # Docker ignore rules
 ├── setup.py                       # Project setup script
-
+```
 
 📊 **Collaborative Filtering Approach**  
 - Uses user-item interaction data to find similarities between users or items  
